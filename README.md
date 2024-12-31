@@ -66,7 +66,7 @@ Run the SearXNG docker image:
 docker run -d --name searxng -p 8888:8080 -v ./searxng:/etc/searxng --restart always searxng/searxng:latest
 ```
 Note: SearXNG and Open WebUI both run on port 8080, so I've mapped SearXNG to my local machine port 8888.
-The reference to the `./searxng` folder in the docker run command is a reference to a location on your local machine where you will need to provide some configuration files for Searxng. We recommend you use the exact configuration files provided in the [Open WebUI documentation](https://docs.openwebui.com/features/web_search/).
+The reference to the `./searxng` folder in the docker run command is a reference to a location on your local machine where you will need to provide some configuration files for Searxng. We recommend you use the exact configuration files provided in the [Open WebUI documentation](https://docs.openwebui.com/tutorials/integrations/web_search#1-searxng-configuration).
 
 This agent uses the SearXNG API directory - So you do not need to follow the steps in the Open WebUI documentation to setup SearXNG in the UI of Open WebUI. It is only necessary if you want to use SearXNG via the Open WebUI interface apart from this agent.
 
